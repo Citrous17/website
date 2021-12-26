@@ -4,16 +4,23 @@ body {
 
 h1 {
 	color:white; 
-	font-family:verdana; 
+	font-family:monospace; 
 	font-size: 120%;
 	text-align:center;
 }
 
 h2 {
 	color:white; 
-	font-family:verdana; 
+	font-family:monospace; 
 	font-size: 300%;
 	text-align:center;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+  font-size:  100%;
+  text-align: center-left;
 }
 
 ul {
@@ -42,4 +49,18 @@ li a:hover {
 
 .active {
   background-color: red;
+}
+.fadeIn {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
