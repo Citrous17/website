@@ -1,5 +1,8 @@
 body {
-	background-color: black;
+	background-image: url('../pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -15,7 +18,7 @@ p {
   position: relative;
   text-align: center;
   align-content: center;
-  left: 20%;
+  left: 25%;
   bottom: 90%;
   width: 50%;
   border: 15px black;
