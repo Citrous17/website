@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang=en-US>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-
-<div style="display: block" id="hideAll">
-<h1>LOADING</h1>
-</div>
-
 <title>Kyle Stallings - Apps</title>
 	<link rel="stylesheet" href="style/appStyle.css">
-    <link rel="stylesheet" href="style/global.css"> 
-    <!-- Add icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/slideshowScript.js"></script>
 </head>
 
-<body class="fadeIn">
+<body>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="news.html">News</a>
-  <a href="apps.html" class="active">Apps</a>
-  <a href="projects.html">Projects</a>
-</div>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="apps.html" class="active">Apps</a></li>
+  <li><a href="projects.html">Projects</a></li>
+</ul>
 
 <!-- MAIN (Center website) -->
 <div class="main">
@@ -63,33 +56,43 @@
   </div>
 </div>
 
+<!-- Will be used for development later
+<button type="button" class="collapsible">Development</button>
+<div class="collapseContent">
+  <p>Lorem ipsum...</p>
+</div>
+--> 
+
 <hr style="border:0">
 
 <div>
 <a href="https://apps.apple.com/ng/app/fruitilicious/id1579226874" target="_blank">
-  <img src="pictures/AppStore.svg" alt="HTML tutorial" class="center" style="width:25%">
+  <img src="pictures/AppStore.svg" alt="HTML tutorial" class="center">
 </a>
-<hr style="border:0">
 </div>
 
 <!-- END MAIN -->
 </div>
 
-<div class="navbar">
-<p style="display: inline-block; color: white; font-family: monospace; font-size:  100%;"> Copyright 2022 © Kyle Stallings | All Rights Reserved</p>
-  <a href="https://www.instagram.com/kyle.stallingss/" target="_blank"><i class="fa fa-instagram" style="text-decoration: none;
-  font-size: 58px
-  color: white;"></i></a>
-  <a href="https://www.linkedin.com/in/kyle-stallings-47599a222/" target="_blank"><i class="fa fa-linkedin" style="text-decoration: none;
-  color: white;"></i></a>
-</div>
-
- <script type="text/javascript">
-   document.getElementById("hideAll").style.display = "block";
-   window.onload = function() 
-  { document.getElementById("hideAll").style.display = "none"; }
- </script> 
-
 </body>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
 
 </html>

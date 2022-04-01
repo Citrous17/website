@@ -3,8 +3,41 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 20px;
-  font-family: Arial;
+}
+
+dl {
+  list-style-type: disc;
+  color: white;
+  font-family: monospace;
+  font-size:  200%;
+  margin: 50px;
+  padding: 30px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
 
 * {
@@ -13,21 +46,6 @@ body {
 
 .active {
   background-color: red;
-}
-
-.button {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  justify-content: center;  
-  align-items: center;"
-}
-
-.alignLeft {
-	text-align: left;
 }
 
 /* The actual timeline (the vertical ruler) */
