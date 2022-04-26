@@ -1,4 +1,13 @@
-﻿/* Place the navbar at the bottom of the page, and make it stick */
+﻿body {
+  background-image: url('../pictures/background.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
   background-color: #333;
   display: inline-block;

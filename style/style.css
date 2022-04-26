@@ -1,12 +1,4 @@
-﻿body {
-  background-image: url('../pictures/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 20px;
-  font-family: Arial;
-}
-
+﻿
 h1 {
 	color:white; 
 	font-family:monospace; 
