@@ -1,4 +1,8 @@
 ﻿
+* {
+  box-sizing: border-box;
+}
+
 h1 {
 	color:white; 
 	font-family:monospace; 
@@ -29,7 +33,6 @@ p {
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
   text-align: center;
 }
 
@@ -40,6 +43,27 @@ p {
 
 .alignLeft {
 	text-align: left;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  padding: 10px;
+  height: 500px;
+}
+
+.row{
+  align-content: center;
+  vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 button {
