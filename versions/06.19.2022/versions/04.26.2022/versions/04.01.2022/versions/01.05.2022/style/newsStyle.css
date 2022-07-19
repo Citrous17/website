@@ -1,0 +1,70 @@
+body {
+	background-image: url('../pictures/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+	color:white; 
+	font-family:monospace; 
+	font-size: 120%;
+	text-align:center;
+}
+
+p {
+  color: whitesmoke;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  left: 25%;
+  bottom: 90%;
+  width: 50%;
+  border: 15px black;
+  padding: 10px;
+  margin: 20px;
+  font-size: 200%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
+.fadeIn {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
