@@ -1,120 +1,78 @@
-﻿<!DOCTYPE html>
-<html lang=en-US>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
 <head>
-
-<div style="display: block" id="hideAll">
-<h1>LOADING</h1>
-</div>
-
-<title>Kyle Stallings - Home</title>
-	<link rel="stylesheet" href="style/index.css"> 
-	<link rel="stylesheet" href="style/global.css"> 
-	 <!-- Add icon library --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <Title>Kyle Stallings's Homepage</Title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link id="mainStyleSheet" rel="stylesheet" href="CSS/modern.css">
 </head>
 
-<!-- This sets the background to black for style -->
-<body class="fadeIn">
-
-<!-- This is the page navigation bar at the top of the page -->
-
-<div class="navbar">
-  <a href="index.html" class="active">Home</a>
-  <a href="news.html">News</a>
-  <a href="apps.html">Apps</a>
-  <a href="projects.html">Projects</a>
-</div>
-
-<!-- This is the small text that the user first sees -->
-<h1>I am</h1>
-
-<!-- This is the big text that the user sees, my name! -->
-<h2>Kyle Stallings</h2>
-
-<div class="row">
-  <div class="column"></div>
-
-  <div class="column">
-  <!-- This is the leader card -->
-    <div class="card">
-      <img src="pictures/index/LeftPicture.webp" alt="Kyle Stallings" style="width:100%;">
-      <p class="title">Leader</p>
-      <br>
-    </div>
-  </div>
-
-  <!-- This is the selling card -->
-  <div class="column" style="position:absolute">
-    <div class="card">
-      <img src="pictures/index/CenterPicture.webp" alt="Kyle Stallings" style="width:100%;">
-      <h1 style="color:black">Kyle Stallings</h1>
-      <p class="title">Computer / Software Engineer</p>
-      <p style="color:black; font-size:20px">Texas A&M University   Undergraduate</p>
-      <a href="https://www.instagram.com/kyle.stallingss/" target="_blank"><i class="fa fa-instagram" style="text-decoration: none;
-      font-size: 28px;
-      color: black;"></i></a>
-      <a href="https://www.linkedin.com/in/kyle-stallings-47599a222/" target="_blank"><i class="fa fa-linkedin" style="text-decoration: none;
-      font-size: 28px;
-      color: black;"></i></a>
-      <p><a href = "mailto:citrous@tamu.edu?subject=[Inquiry]"><button>Contact / Email</button></a></p>
-    </div>
-  </div>
-
-  <div class="column"></div>
-
-  <!-- This is the leader card -->
-  <div class="column">     
-      <div class="card">
-        <img src="pictures/index/RightPicture.webp" alt="Kyle Stallings" style="width:100%">
-        <p class="title">Innovator</p>
-        <br>
+<body>
+  <header>
+    <nav >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai.html">A.I.</a></li>
+            <button onclick="toggleStyleSheet()"><img src="images/coin.png" class="mainButton"></img></button>
+        </ul>
+    </nav>
+    <div id="indexHeader">
+      <div>
+        <h2 class="whiteOswald">My name is</h2>
+        <h1 class="white">Kyle Stallings</h1>
       </div>
-  </div>
-  
-</div>
-
-<div class="row">
-  <div class="column"></div>
-
-  <div class="column">
-  <!-- This is the leader card -->
-    <div class="card">
-      <img src="pictures/index/LeftPicture2.webp" alt="Kyle Stallings" style="width:100%;">
-      <p class="title">Entrepreneur</p>
-      <br>
-    </div>
-  </div>
-
-  <div class="column"style="padding: 20% 0;">
-    <div class="card" style="padding: 50px 0;">
-      <p class="title"style="font-size:100%; ">Programmer and Entrepreneur, Kyle is engineering the next
-        generation of products that will change the economic landscape.  
-        Whether it's apps, games, or models, Kyle is constantly improving
-        himself to make the world a more efficient and enjoyable place.</p>
-    </div>
-  </div>
-
-  <div class="column">
-      <div class="card">
-        <img src="pictures/index/RIghtPicture2.webp" alt="Kyle Stallings" style="width:100%;">
-        <p class="title">Critical Thinker</p>
-        <br>
+      <div>
+        <img src="images/Me.png" id="indexHeaderImage"> </img>
       </div>
+   </div>
+</header>
+
+<main>
+  <!-- First Card -->
+  <div class="retroContainer">
+  <div class="card">
+    <div>
+      <p class="large" id="indexTextbox1">Hello! I am a Computer Engineering student at Texas A&M University, Class of 2025</p>
     </div>
+  </div>
+  <div class="card">
+    <div>
+      <p class="whiteOswald" id="indexTextbox2">I am currently pursuing a Bachelor's in Computer Engineering with a Minor in Mathematics and a Minor in Computer Science. I am very passionate about Computers! It is my hopes to Engineer the products of tommorow. Whether it's an App, Game, or Scientific Model, I am constantly improving myself with various projects to make the world a more efficient and enjoyable place.</p>
+    </div>
+  </div>
 </div>
-
-<div class="navbar">
-<p style="display: inline-block"> Copyright 2022 Ⓒ Kyle Stallings | All Rights Reserved</p>
-  <a href="https://www.instagram.com/kyle.stallingss/" target="_blank"><i class="fa fa-instagram" style="text-decoration: none;
-  color: white;"></i></a>
-  <a href="https://www.linkedin.com/in/kyle-stallings-47599a222/" target="_blank"><i class="fa fa-linkedin" style="text-decoration: none;
-  color: white;"></i></a>
+  <!-- Carousel  -->
+  <div class="retroContainer">
+  <div class="card">
+  <h2 class="whiteCenter">Proficient with these frameworks</h2>
+  <p class="whiteOswald">These are the coding languages that I am most familar with at this time.</p>
+  <div class="carouselContainer">
+    <img class="carouselCard" src="images/Python.svg">
+    <img class="carouselCard" src="images/CPlusPlus.svg">
+    <img class="carouselCard" src="images/CSharp.svg">
+    <img class="carouselCard" src="images/Swift.svg">
+    <img class="carouselCard" src="images/Ruby.svg">
+    <img class="carouselCard" src="images/JavaScript.svg">
+    <img class="carouselCard" src="images/TypeScript.svg">
+    <img class="carouselCard" src="images/Lua.svg">
+  </div>
 </div>
+<div class="card"> <!-- Describing Carousel-->
+  <h2 class="whiteCenter">Leader. Innovator. Critical Thinker.</h2>
+  <p class="whiteOswald" id="indexTextbox3">These are the coding languages that I am most familar with at this time. For each of these languages, you can find how they were used on my Qualifications page at the top. There are other languages that I am familiar with (C, x86-64 Assembly, Go, Rust), but do not feel I am proficient yet with.</p>
+  </div>
+</div>
+  <div class="footer">
+    <span>Copyright 2024 - Kyle Stallings</span>
+    <a href="https://www.linkedin.com/in/kyle-stallings-47599a222/" class="links">LinkedIn</a>
+    <a href="https://github.com/Citrous17" class="links">Github</a>
+    <a href="https://leetcode.com/Citrous/" class="links">Leetcode</a>
+    <a href="qualifications.html" class="links">Resume</a>
+  </div>
 
- <script type="text/javascript">
-   document.getElementById("hideAll").style.display = "block";
-   window.onload = function() 
-  { document.getElementById("hideAll").style.display = "none"; }
- </script> 
+</main>
+<script src="styles.js"></script>
 </body>
 </html>
